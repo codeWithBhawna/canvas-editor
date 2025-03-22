@@ -1,0 +1,198 @@
+.canvas-editor {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.canvas-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  gap: 20px;
+}
+
+.sidebar-icons {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  padding: 10px;
+}
+
+.sidebar-icons img {
+  width: 115px;
+  cursor: grab;
+  border: 1px solid #ccc;
+  padding: 5px;
+  background: white;
+  border-radius: 5px;
+}
+
+.canvas-container {
+  background: #f3f3f3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid black;
+}
+
+
+.zoom-bar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: black;
+  border-radius: 25px;
+  padding: 10px;
+  width: 200px;
+  margin: 20px auto;
+}
+
+.zoom-bar button {
+  background: white;
+  border: none;
+  padding: 5px 15px;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+.zoom-bar input[type="range"] {
+  margin: 0 10px;
+  width: 100px;
+  accent-color: white;
+}
+
+.toolbar {
+  display: flex;
+  gap: 10px;
+  margin: 15px auto;
+  justify-content: center;
+}
+
+.toolbar button {
+  padding: 8px 15px;
+  background: black;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+
+
+/* Updated canvasEditor.css */
+
+.canvas-editor {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.toolbar {
+  display: flex;
+  gap: 10px;
+  margin: 15px auto;
+  justify-content: center;
+  align-items: center;
+}
+
+.toolbar button {
+  padding: 8px 15px;
+  background: black;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.zoom-controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: black;
+  border-radius: 25px;
+  padding: 5px 15px;
+  margin-left: 10px;
+}
+
+.zoom-btn {
+  background: white;
+  color: black;
+  border: none;
+  padding: 5px 10px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 50%;
+  margin: 0 5px;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.zoom-display {
+  color: white;
+  font-size: 14px;
+  margin: 0 10px;
+}
+
+
+/* Sidebar Container */
+.elements-container {
+  width: 250px;
+  background: #fff;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* Sidebar Items */
+.element-item {
+  display: flex;
+  align-items: center;
+  background: #fff;
+  padding: 10px;
+  border-radius: 6px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  cursor: grab;
+  transition: transform 0.2s ease-in-out;
+}
+
+/* Fix Image Display */
+.element-item img {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+  object-fit: contain;
+}
+
+/* Improve Hover Effect */
+.element-item:hover {
+  transform: scale(1.05);
+  background: #f0f0f0;
+}
+
+/* Fix Text Alignment */
+.element-item span {
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+}
+
+
+.canvas-container .element:nth-child(n) {
+  position: relative;
+  z-index: 10;
+}

@@ -1,0 +1,37 @@
+.sidebar {
+  width: 150px; /* Sidebar width */
+  height: 100vh; /* Full height */
+  background-color: #222; /* Dark background */
+  position: fixed; /* Fixed on the left */
+  left: 0;
+  top: 0;
+  padding: 20px;
+  color: white;
+  z-index: 1000; /* Keep it above other elements */
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+}
+
+.sidebar ul li {
+  margin-bottom: 15px;
+}
+
+.sidebar ul li a {
+  color: white;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.sidebar ul li a:hover {
+  background: #444;
+}
+
+

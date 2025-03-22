@@ -1,0 +1,61 @@
+.elements-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f8f9fa;
+    padding: 15px;
+    width: 200px;
+    height: 100vh;
+    border-right: 2px solid #ddd;
+    overflow-y: auto;
+  }
+  
+  /* Styling for each button */
+  .element-btn {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 8px;
+    background-color: white;
+    cursor: grab;
+    transition: transform 0.2s ease, background-color 0.3s ease;
+    font-size: 14px;
+    font-weight: 600;
+    color: #333;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .element-btn img {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+  }
+  
+  /* Hover effect */
+  .element-btn:hover {
+    background-color: #e9ecef;
+    transform: scale(1.05);
+  }
+  
+  /* Active (clicked) effect */
+  .element-btn:active {
+    transform: scale(0.95);
+    cursor: grabbing;
+  }
+  
+
+  .canvas-container .element {
+    width: 200px;
+    padding: 15px;
+    margin-bottom: 10px;
+    background: #f8f9fa; /* Light gray background */
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Shadow effect */
+    font-weight: bold;
+    text-align: center;
+    cursor: pointer;
+  }
